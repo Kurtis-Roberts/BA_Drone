@@ -24,7 +24,8 @@ $("#landing-button").on("click touchstart", function(event) {
     $('html, body').animate({
         scrollTop: $("#post-section").offset().top
     }, 1000);
-
+    toggleForm()
+    bindFormClick()
 })
 window.onbeforeunload = function() {
     window.scrollTo(0, 0);

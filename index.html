@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BA_Drone</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/6e377e3f00.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="landing-page">
+
+
+        <div id="video_overlays">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 id="app">Vacation Drone Videos</h1><br>
+                    <a href="#post-section" class="scroll" id="landing-button"><i class="fa fa-angle-down fa-4x icon-hover  scroll-icon3 fa-pulse2" aria-hidden="true"></i></a>
+                </div>
+
+
+            </div>
+        </div>
+        <div>
+            <div id="video_box">
+
+
+
+                <video autoplay loop id="player" style="margin-top: -8%" muted plays-inline>
+                                    <source src="assets/images/exampleVid.mp4" type="video/mp4">
+                                  </video>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="post-section" id="post-section">
+        <div row>
+            <div class="col-8">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">BA Drone Videos
+                            <br>
+                            <span class="modal-name">Contact Us For More Information</span>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <!-- MODAL FORM CONTENT TO ADD A NEW CHORE-->
+
+                        <form>
+
+                            <div class="form-group">
+                                <strong>
+                                                    <label for="chorePoints">Name</label>
+                                                </strong>
+                                <input type="text" class="form-control" id="chorePoints" placeholder="">
+                            </div>
+
+                            <div class="form-group">
+                                <strong>
+                                            <label for="chorePoints">Phone Number</label>
+                                        </strong>
+                                <input type="phone" class="form-control" id="chorePoints" placeholder="">
+                            </div>
+
+                            <div class="form-group">
+                                <strong>
+                                                <label for="chorePoints">Email</label>
+                                            </strong>
+                                <input type="email" class="form-control" id="chorePoints" placeholder="">
+                            </div>
+
+
+                            <div class="form-group">
+                                <strong>
+                                            <label for="choreMessage" class="">Message</label>
+                                        </strong>
+                                <textarea class="form-control" id="choreMessage" rows="4"></textarea>
+                            </div>
+                        </form>
+
+
+                        <!-- END OF MODAL FORM CONTENT FOR A NEW CHORE ADDITION -->
+                    </div>
+
+
+
+                    <!-- CHORSE SUBMIT BUTTON -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data="10156109694949884" id="chores-submit">Submit</button>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="assets/index.js"></script>
+
+</body>
+
+</html>

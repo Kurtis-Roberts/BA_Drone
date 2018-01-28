@@ -12,18 +12,27 @@
     <script src="https://use.fontawesome.com/6e377e3f00.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
     <div class="landing-page">
 
 
         <div id="video_overlays">
             <div class="row text-center">
                 <div class="col-12">
-                    <h1 id="app">Vacation Drone Videos</h1><br>
+                    <h1 id="app" class="scroll">Vacation Drone Videos</h1><br>
                     <a href="#post-section" class="scroll" id="landing-button"><i class="fa fa-angle-down fa-4x icon-hover  scroll-icon3 fa-pulse2" aria-hidden="true"></i></a>
                 </div>
 
@@ -44,72 +53,34 @@
 
 
     <div class="post-section" id="post-section">
-        <div row>
-            <div class="col-8">
-                <div class="modal-content">
-                    <div class="modal-header text-center">
-                        <h5 class="modal-title text-white" id="exampleModalLabel">BA Drone Videos
-                            <br>
-                            <span class="modal-name">Contact Us For More Information</span>
-                        </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                    </div>
-                    <div class="modal-body">
-
-                        <!-- MODAL FORM CONTENT TO ADD A NEW CHORE-->
-
-                        <form>
-
-                            <div class="form-group">
-                                <strong>
-                                                    <label for="chorePoints">Name</label>
-                                                </strong>
-                                <input type="text" class="form-control" id="chorePoints" placeholder="">
-                            </div>
-
-                            <div class="form-group">
-                                <strong>
-                                            <label for="chorePoints">Phone Number</label>
-                                        </strong>
-                                <input type="phone" class="form-control" id="chorePoints" placeholder="">
-                            </div>
-
-                            <div class="form-group">
-                                <strong>
-                                                <label for="chorePoints">Email</label>
-                                            </strong>
-                                <input type="email" class="form-control" id="chorePoints" placeholder="">
-                            </div>
-
-
-                            <div class="form-group">
-                                <strong>
-                                            <label for="choreMessage" class="">Message</label>
-                                        </strong>
-                                <textarea class="form-control" id="choreMessage" rows="4"></textarea>
-                            </div>
-                        </form>
-
-
-                        <!-- END OF MODAL FORM CONTENT FOR A NEW CHORE ADDITION -->
-                    </div>
-
-
-
-                    <!-- CHORSE SUBMIT BUTTON -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data="10156109694949884" id="chores-submit">Submit</button>
-                    </div>
-
-
-
+        <div class='form-overlay'></div>
+        <div class='icon fa fa-pencil' id='form-container'>
+            <span class='icon fa fa-close' id='form-close'></span>
+            <div id='form-content'>
+                <div id='form-head'>
+                    <h1 class='pre'>Get in touch</h1>
+                    <p class='pre'>Good choice...</p>
+                    <h1 class='post'>Thanks!</h1>
+                    <p class='post'>I'll be in touch ASAP</p>
                 </div>
+                <form>
+                    <input class='input name' name='user_name' placeholder='Your name please' type='text'>
+                    <input class='input email' name='user_email' placeholder='A contact email' type='text'>
+                    <select class='input select' name='subject'>
+                    <option disabled=''>What shall we talk about?</option>
+                    <option selected=''>About a new project</option>
+                    <option>About a job opportunity</option>
+                    <option>Let's do this over a coffee</option>
+                  </select>
+                    <textarea class='input message' placeholder='How can I help?'></textarea>
+                    <input class='input submit' type='submit' value='Send Message'>
+                </form>
             </div>
         </div>
     </div>
+
+
+
 
 
 

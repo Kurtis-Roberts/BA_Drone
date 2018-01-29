@@ -1,40 +1,55 @@
+/////////////////// TITLE FADE-IN //////////////////////////
+
 $(document).ready(function() {
+    setTimeout(function() {
+        $(".scroll").animate({ 'opacity': '1' }, 1000);
+    }, 2500);
+
+    setTimeout(function() {
+        $(".scroll1").animate({ 'opacity': '1' }, 1000);
+    }, 1500);
+
+    setTimeout(function() {
+        $("#video_overlays").animate({ 'opacity': '1' }, 1000);
+    }, 900);
 
 
-        /////////////////// TITLE FADE-IN //////////////////////////
-        setTimeout(function() {
-            $(".scroll").animate({ 'opacity': '1' }, 1000);
-        }, 2500);
-
-        setTimeout(function() {
-            $(".scroll1").animate({ 'opacity': '1' }, 1000);
-        }, 1500);
-
-        setTimeout(function() {
-            $("#video_overlays").animate({ 'opacity': '1' }, 1000);
-        }, 900);
+})
 
 
-    })
-    /////////////////// SCROLL BOTTOM //////////////////////
+
+/////////////////// SCROLL BOTTOM //////////////////////
+
 $("#landing-button").on("click touchstart", function(event) {
     $('html, body').animate({
         scrollTop: $("#post-section").offset().top
-    }, 1000);
+    }, 800);
 })
 window.onbeforeunload = function() {
     window.scrollTo(0, 0);
 }
 
-/////////////////////// SCROLL TOP /////////////////////////
-$(".fa-arrow-up").on("click touchstart", function(event) {
+
+/////////////////// ABOUT BTN SCROLL////////////////////////
+
+$("#about").on("click touchstart", function(event) {
     $('html, body').animate({
-        scrollTop: $("#landing-page").offset().top
-    }, 1000);
+        scrollTop: $("#post-section").offset().top
+    }, 800);
 })
 window.onbeforeunload = function() {
     window.scrollTo(0, 0);
 }
+
+
+/////////////////////// SCROLL TOP /////////////////////////
+
+$('.fa-arrow-up').click(function() {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+});
 
 
 

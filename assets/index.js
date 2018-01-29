@@ -1,32 +1,41 @@
 $(document).ready(function() {
 
 
+        /////////////////// TITLE FADE-IN //////////////////////////
+        setTimeout(function() {
+            $(".scroll").animate({ 'opacity': '1' }, 1000);
+        }, 2500);
 
-    setTimeout(function() {
-        $(".scroll").animate({ 'opacity': '1' }, 1000);
-    }, 2500);
+        setTimeout(function() {
+            $(".scroll1").animate({ 'opacity': '1' }, 1000);
+        }, 1500);
 
-    setTimeout(function() {
-        $(".scroll1").animate({ 'opacity': '1' }, 1000);
-    }, 1500);
-
-    setTimeout(function() {
-        $("#video_overlays").animate({ 'opacity': '1' }, 1000);
-    }, 900);
+        setTimeout(function() {
+            $("#video_overlays").animate({ 'opacity': '1' }, 1000);
+        }, 900);
 
 
-})
-
+    })
+    /////////////////// SCROLL BOTTOM //////////////////////
 $("#landing-button").on("click touchstart", function(event) {
     $('html, body').animate({
         scrollTop: $("#post-section").offset().top
     }, 1000);
-    toggleForm()
-    bindFormClick()
 })
 window.onbeforeunload = function() {
     window.scrollTo(0, 0);
 }
+
+/////////////////////// SCROLL TOP /////////////////////////
+$(".fa-arrow-up").on("click touchstart", function(event) {
+    $('html, body').animate({
+        scrollTop: $("#landing-page").offset().top
+    }, 1000);
+})
+window.onbeforeunload = function() {
+    window.scrollTo(0, 0);
+}
+
 
 
 ///////////////////////// MODAL //////////////////////////////////

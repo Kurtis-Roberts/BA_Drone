@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 
 
-/////////////////// SCROLL BOTTOM //////////////////////
+/////////////////// SCROLL TO BOTTOM //////////////////////
 
 $("#landing-button").on("click touchstart", function(event) {
     $('html, body').animate({
@@ -32,7 +32,7 @@ window.onbeforeunload = function() {
 }
 
 
-/////////////////// ABOUT BTN SCROLL////////////////////////
+/////////////////// "ABOUT BTN" SCROLL ////////////////////////
 
 $("#about").on("click touchstart", function(event) {
     $('html, body').animate({
@@ -44,7 +44,33 @@ window.onbeforeunload = function() {
 }
 
 
-/////////////////////// SCROLL TOP /////////////////////////
+/////////////////// "CONTACT BTN" SCROLL ////////////////////////
+
+$("#contact").on("click touchstart", function(event) {
+    $('html, body').animate({
+        scrollTop: $("#post-section").offset().top
+    }, 800);
+    toggleForm();
+    bindFormClick();
+})
+window.onbeforeunload = function() {
+    window.scrollTo(0, 0);
+}
+
+
+/////////////////// "PORTFOLIO BTN" SCROLL ////////////////////////
+
+$("#portfolio").on("click touchstart", function(event) {
+    $('html, body').animate({
+        scrollTop: $('.portfolio-section').offset().top - ($(window).height() - $('.portfolio-section').outerHeight(true)) / 2
+    }, 800);
+
+})
+window.onbeforeunload = function() {
+    window.scrollTo(0, 0);
+}
+
+/////////////////////// SCROLL TO TOP /////////////////////////
 
 $('.fa-arrow-up').click(function() {
     $('body,html').animate({
@@ -121,3 +147,14 @@ function isValidEmail(email) {
     var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
     return pattern.test(email);
 }
+
+
+///////////////////////// CAROUSEL ///////////////////////////////
+(function($) {
+    "use strict";
+
+    // manual carousel controls
+    $('.next').click(function() { $('.carousel').carousel('next'); return false; });
+    $('.prev').click(function() { $('.carousel').carousel('prev'); return false; });
+
+})(jQuery);

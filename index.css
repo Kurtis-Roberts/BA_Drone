@@ -387,7 +387,7 @@ h2 {
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: -172vh;
+    bottom: -150vh;
     background: url(http://getwallpapers.com/wallpaper/full/1/b/0/632712.jpg);
     overflow: hidden;
     border-radius: 50%;
@@ -976,8 +976,8 @@ li {
 /* equal card height */
 
 .row-equal>div[class*='col-'] {
-    display: flex;
-    /* flex: 1 0 auto; */
+    display: inherit;
+    flex: 1 0 auto;
 }
 
 .row-equal .card {
@@ -991,6 +991,7 @@ li {
 .carousel-inner>.row-equal.next,
 .carousel-inner>.row-equal.prev {
     display: flex;
+    margin-top: 20rem;
 }
 
 
@@ -998,7 +999,7 @@ li {
 
 .carousel-inner>.row-equal.active.left,
 .carousel-inner>.row-equal.active.right {
-    opacity: 0.5;
+    opacity: 0.8;
     display: flex;
 }
 
@@ -1014,25 +1015,8 @@ li {
     margin-top: 5rem;
 }
 
-
-/* .carousel-item {
-    margin-top: -160px;
-}
-
-.carousel-item-left {
-    margin-top: -160px;
-}
-
-.carousel-item-prev {
-    margin-top: -160px;
-}
-
-.carousel-item-right {
-    margin-top: -160px;
-}*/
-
 .carousel-inner {
-    overflow: inherit;
+    overflow: hidden;
     margin-top: -160px;
     margin-bottom: -7rem;
 }
@@ -1040,3 +1024,10 @@ li {
 .lead {
     z-index: 99;
 }
+
+.d-block {
+    height: 385px;
+}
+
+
+/*  */

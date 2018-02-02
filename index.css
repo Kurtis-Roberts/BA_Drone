@@ -277,14 +277,14 @@ a:hover {
 }
 
 .portfolio-section {
-    background: url(http://wrbbradio.org/wp-content/uploads/2016/10/grey-background-07.jpg) no-repeat center center fixed;
+    /* background: url(http://wrbbradio.org/wp-content/uploads/2016/10/grey-background-07.jpg) no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 65vh;
+    min-height: 80vh;
     height: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     image-rendering: -webkit-optimize-contrast;
     border-top: 1px solid darkgray;
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
@@ -387,7 +387,7 @@ h2 {
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: -150vh;
+    bottom: -165vh;
     background: url(http://getwallpapers.com/wallpaper/full/1/b/0/632712.jpg);
     overflow: hidden;
     border-radius: 50%;
@@ -1027,6 +1027,17 @@ li {
 
 .d-block {
     height: 385px;
+}
+
+.carousel-indicators {
+    bottom: -45px;
+}
+
+.portFol {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 8rem;
+    font-size: 2.3rem;
+    color: white;
 }
 
 

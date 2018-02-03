@@ -6,8 +6,8 @@ $(document).ready(function() {
     }, 2500);
 
     setTimeout(function() {
-        $(".scroll1").animate({ 'opacity': '1' }, 1000);
-    }, 1500);
+        $(".scroll1").animate({ 'opacity': '1' }, 2000);
+    }, 6000);
 
     setTimeout(function() {
         $("#video_overlays").animate({ 'opacity': '1' }, 1000);
